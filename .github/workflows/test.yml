@@ -1,0 +1,44 @@
+name: Windows and Mac package tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -B -X utf8 -m unittest discover -s tests -v
+      - run: python -B -X utf8 tools/package.py
+  publish-test-release:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -B -X utf8 tools/package.py
+      - name: Publish an immutable prerelease after both OS tests pass
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(cat VERSION)
+          if gh release view "v$version" >/dev/null 2>&1; then
+            echo 'Version already published; no overwrite.'
+          else
+            gh release create "v$version" "artifacts/KMW00-brand-marketing-$version.zip" --target "$GITHUB_SHA" --prerelease --title "KMW00 $version 公開測試版" --notes-file RELEASE_NOTES.md
+          fi

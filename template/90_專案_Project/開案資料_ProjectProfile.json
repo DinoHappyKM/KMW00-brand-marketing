@@ -1,0 +1,72 @@
+{
+  "template_version": "kmw00-brand-marketing",
+  "project_mode": "generic_only",
+  "starter": {
+    "variant": "generic",
+    "status": "awaiting_step_1"
+  },
+  "intake_status": "not_started",
+  "current_step": "batch_intake",
+  "current_question": "all_intake_questions",
+  "brand": {
+    "status": "not_started",
+    "name": "",
+    "industry": "",
+    "services_or_products": [],
+    "target_audience": "",
+    "customer_problems": [],
+    "strengths": [],
+    "main_bottleneck": "",
+    "forbidden_methods": []
+  },
+  "sales_model": {
+    "status": "not_started",
+    "primary_type": "",
+    "secondary_type": ""
+  },
+  "industry": {
+    "module_id": "",
+    "module_name": "",
+    "module_version": "",
+    "module_status": "generic_only",
+    "skill_id": "",
+    "skill_name": "",
+    "skill_status": "not_installed",
+    "routing_status": "not_evaluated"
+  },
+  "offer_333": {
+    "status": "not_started",
+    "lead_value": [],
+    "low_margin_first_purchase": [],
+    "high_value_core_offer": [],
+    "pricing_and_packages": [],
+    "referral": {}
+  },
+  "brand_ci": {
+    "status": "not_started",
+    "colors": [],
+    "background": "",
+    "fonts": [],
+    "visual_style": "",
+    "assets": []
+  },
+  "customer_data": {
+    "status": "not_started",
+    "creation_trigger": "",
+    "fields": [],
+    "sensitive_data_rules": "",
+    "permissions": []
+  },
+  "system_build": {
+    "status": "not_started",
+    "channels": [],
+    "external_systems": [],
+    "test_evidence": []
+  },
+  "confirmed_decisions": [],
+  "pending_items": [],
+  "do_not_assume": [],
+  "package_version": "0.1.0-beta.1",
+  "intake_mode": "batch",
+  "assumptions": []
+}
