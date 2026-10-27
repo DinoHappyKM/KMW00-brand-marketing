@@ -1,7 +1,7 @@
 {
   "template_id": "kmw00-brand-marketing",
   "template_type": "generic_core",
-  "core_release_version": "0.1.0-beta.1",
+  "core_release_version": "0.1.0-beta.2",
   "paths": {
     "profile": "90_專案_Project/開案資料_ProjectProfile.json",
     "project_status": "02_專案狀態_Project.md",

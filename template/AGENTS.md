@@ -16,3 +16,9 @@
 ## 保存與確認
 品牌／成交型／商品／CI／顧客資料可先draft或estimated，規劃草圖可提前完成，不必等待每項confirmed。只有使用者明確確認才設confirmed並記confirmed_decisions；工作假設放assumptions，保留來源、範圍與限制。system_build=confirmed需上述五區均confirmed且有實測證據；草圖完成不代表上線。
 每次結束同步原MD、開案JSON、Project及Index；current_step與current_question記接續位置。跨端交付私人企劃檔與摘要，不假設自動同步，不把私人資料送回公開GitHub。公開發布、發訊息、付款等仍須有對應授權。
+
+
+## 手機／雲端保存
+先區分執行工作區、Google Drive與專案資料來源。Linux可寫工作區可正常使用；外掛認證或資料來源可讀不能當成Drive可寫證據。先發現當次工具、確認私人目標，再做資料夾與小檔上傳讀回測試；有完整能力才逐檔保存原始MD／JSON並驗證。保留既有資料，按返回ID接續，部分完成如實記錄。
+只有讀取工具時，在可寫工作區繼續規劃，使用對應版本套件的tools/cloud_workspace.py匯出私人ZIP與手機接續MD，提供下載並明說尚未存入Drive。只有對話能力則提供可複製內容，不宣稱檔案已建立。不要假設雲端執行資料夾永久保存、ZIP會在Drive自動展開、AGENTS會在手機自動載入或背景自動同步。
+下一次先讀最新版私人企劃與開案JSON，已有答案不重問；每次結束分別回報工作區、交付檔、Drive保存狀態。私人企劃與Drive ID不能回傳公開GitHub。

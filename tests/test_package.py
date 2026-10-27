@@ -1,4 +1,4 @@
-import copy,importlib.util,json,os,shutil,subprocess,tempfile,unittest
+import copy,importlib.util,json,os,shutil,subprocess,sys,tempfile,unittest
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('verify',R/'template/70_工具_Tools/verify_project.py')
@@ -40,7 +40,7 @@ class PackageTests(unittest.TestCase):
         self.assertIn('一次列完',text);self.assertIn('工作假設',text)
     def install(self,dest,package=R):
         if os.name=='nt':cmd=['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File',str(package/'Install-Windows.ps1'),'-Destination',str(dest)]
-        else:cmd=['bash',str(package/'Install-Mac.sh'),str(dest)]
+        else:cmd=['bash',str(package/('Install-Mac.sh' if sys.platform=='darwin' else 'Install-Linux.sh')),str(dest)]
         # ExecutionPolicy Bypass is only the test subprocess, never a machine policy change.
         return subprocess.run(cmd,capture_output=True,timeout=30)
     def test_installer_new(self):

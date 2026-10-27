@@ -1,4 +1,4 @@
-name: Windows and Mac package tests
+name: Windows Mac and Linux package tests
 on:
   push:
     branches: [main]
@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, macos-latest]
+        os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -B -X utf8 tools/package.py
-      - name: Publish an immutable prerelease after both OS tests pass
+      - name: Publish an immutable prerelease after all three OS tests pass
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
