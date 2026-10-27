@@ -1,7 +1,7 @@
 {
   "template_id": "kmw00-brand-marketing",
   "template_type": "generic_core",
-  "core_release_version": "0.1.0-beta.2",
+  "core_release_version": "0.1.0-beta.3",
   "paths": {
     "profile": "90_專案_Project/開案資料_ProjectProfile.json",
     "project_status": "02_專案狀態_Project.md",
@@ -11,6 +11,7 @@
     "00_系統_System/待安裝模組_Modules/請把模組ZIP放這裡_DropModuleHere.md",
     "00_系統_System/產業參考與估算規則.md",
     "00_系統_System/產業成交模組規則_IndustryModuleRules.md",
+    "00_系統_System/跨裝置使用規則.md",
     "00_系統規則_System.md",
     "01_品牌知識_Brand.md",
     "02_專案狀態_Project.md",

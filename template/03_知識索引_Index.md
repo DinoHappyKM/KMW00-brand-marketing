@@ -28,3 +28,6 @@
 <!-- MODULE_INDEX:START -->
 本版generic_only，未安裝模組。
 <!-- MODULE_INDEX:END -->
+
+- [跨裝置共同規則](00_系統_System/跨裝置使用規則.md)
+- 跨裝置接續：首次prepare後位於90_專案_Project/跨裝置接續.md；雲端版索引需替換成實際文件連結。

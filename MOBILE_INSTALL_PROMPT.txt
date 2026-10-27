@@ -1,8 +1,11 @@
-我要在手機／平板／網頁專案使用KMW00。請從 https://github.com/DinoHappyKM/KMW00-brand-marketing 先讀README.md、INSTALL.md、MOBILE.md與TESTING.md。
-不要因執行環境顯示Linux而停止；先檢查是否可讀寫執行工作區，再列出當次Google Drive工具是否支援列出、讀取、建立資料夾、上傳原始MD／JSON與讀回。相同帳號、外掛認證通過和資料來源可讀不等於可寫；請以實際工具和目標驗證判定，也不要未檢查就斷言手機不能寫。
-先使用標記版本v0.1.0-beta.2並解析實際commit；若標記尚未存在，讀main的VERSION與實際commit，不把浮動main稱為固定版。下載完整套件到已授權工作區或暫存區，閱讀適用腳本並檢查payload.sha256，不能只摘要GitHub文字。
-目的地使用我的專用私人資料夾，位置不明才詢問。既有資料保留、不覆蓋、不重置；已安裝則先讀既有MD與開案JSON接續。不把私人資料、Drive ID或上傳紀錄送回公開GitHub。
-如果我沒給Google Drive目標資料夾連結，先搜尋我已指定的名稱；候選不明時才問。已有私人企劃先讀取接續，不從空模板重開。
-Linux可寫工作區使用Install-Linux.sh或tools/cloud_workspace.py初始化並驗證；Drive有寫入能力時，在我指定的目標做小檔與資料夾測試，按MOBILE.md逐層建立分類資料夾、逐檔上傳原始檔並讀回。記錄實際返回ID，不可把ZIP上傳當成資料夾展開成功。
-Drive無法寫入時，用tools/cloud_workspace.py匯出私人ZIP、handoff.md與drive-plan.json給我下載，明說尚未存入Drive。若執行環境也無法產檔，給可複製接續內容，不宣稱安裝成功。回報工作區初始化、下載交付、Drive保存三項各自的真實狀態；可行的品牌規劃繼續，不把取得儲存權限當成開案必須等待的關卡。
-接著開始KMW00：初次把需要的問題一次全部列完，已知資料先帶入；已有開案進度則接續，不重問已答問題。我不知道的項目，先用有來源的產業常見做法或標明的工作假設繼續，成本列參考依據、幣別與區間，不當成我的實際成本。收到回答後一次產出品牌摘要、成交分類、成交路徑、成本情境與優先行動。結束時同步MD、開案JSON、Project與Index，再依實際能力存檔並回報。
+我要在手機／平板的ChatGPT專案使用KMW00。請從 https://github.com/DinoHappyKM/KMW00-brand-marketing 讀README.md、MOBILE.md、READABLE_STATE_TEMPLATE.md及TESTING.md。
+使用我指定的私人Google Drive資料夾；若只有名稱先查候選，位置不明或多個候選才集中詢問。不要因Linux就停止，也不要把手機當成必定能執行程式。能直接用Google Docs建立品牌文件就走可讀模式，不以完整套件下載、JSON或Python作為開始條件；有可寫工作區才按INSTALL.md初始化。
+使用固定版本v0.1.0-beta.3，記錄VERSION與實際commit；若標記尚未發布，明說候選版，不把main當固定版。
+我的指定私人資料夾本身就是品牌根目錄，直接建立00_系統、10_品牌、20_行銷等分類。禁止自行增加KMW00-XXX、template、workspace外層。既有分類沿用、已有企劃接續，不重置；同名衝突集中核對，不用再包一層繞過。
+日常先讀AGENTS規則、四核心文件、導引式開案、跨裝置接續及本次相關品牌文件。JSON不是手機規劃或可讀保存的必要條件；若不可讀，依既有可讀文件繼續，不空白重開。缺跨裝置接續時依READABLE_STATE_TEMPLATE.md建立，有Python可用tools/readable_workspace.py prepare，保留舊資料。
+手機可用Google Docs正文；成本表可用Sheets並在索引記真實連結。先確認當次建立／更新／讀回工具，逐檔讀回正文，不能只看檔名或上傳成功。跨端指定雲端文件作主來源，本機副本開始前讀最新、寫回前比較起始版本；衝突先合併，不自動覆蓋。
+無Drive寫入能力仍完成規劃，交付可複製文字或可讀TXT／ZIP，明說尚未存入Drive。可執行工具時使用readable_workspace.py export，產生handoff.txt及drive-plan.md；它不需要JSON，也不會自行寫Drive。
+首次問題一次全部列完，已知資料先帶入；續作不重問。不知道的項目採有來源的產業參考或明列工作假設，成本附幣別、區間與來源，不當實際成本。收到回答一次完成品牌摘要、成交分類、成交路徑、成本情境與優先行動。
+暫停時更新可讀品牌文件、接續紀錄、Project與Index，提高修訂並記錄來源。JSON若未核對就標可能較舊。分別回報工作區、下載交付、Drive保存狀態，私人資料不回傳公開GitHub。
+
+
