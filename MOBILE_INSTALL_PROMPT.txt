@@ -1,0 +1,8 @@
+我要在手機／平板／網頁專案使用KMW00。請從 https://github.com/DinoHappyKM/KMW00-brand-marketing 先讀README.md、INSTALL.md、MOBILE.md與TESTING.md。
+不要因執行環境顯示Linux而停止；先檢查是否可讀寫執行工作區，再列出當次Google Drive工具是否支援列出、讀取、建立資料夾、上傳原始MD／JSON與讀回。相同帳號、外掛認證通過和資料來源可讀不等於可寫；請以實際工具和目標驗證判定，也不要未檢查就斷言手機不能寫。
+先使用標記版本v0.1.0-beta.2並解析實際commit；若標記尚未存在，讀main的VERSION與實際commit，不把浮動main稱為固定版。下載完整套件到已授權工作區或暫存區，閱讀適用腳本並檢查payload.sha256，不能只摘要GitHub文字。
+目的地使用我的專用私人資料夾，位置不明才詢問。既有資料保留、不覆蓋、不重置；已安裝則先讀既有MD與開案JSON接續。不把私人資料、Drive ID或上傳紀錄送回公開GitHub。
+如果我沒給Google Drive目標資料夾連結，先搜尋我已指定的名稱；候選不明時才問。已有私人企劃先讀取接續，不從空模板重開。
+Linux可寫工作區使用Install-Linux.sh或tools/cloud_workspace.py初始化並驗證；Drive有寫入能力時，在我指定的目標做小檔與資料夾測試，按MOBILE.md逐層建立分類資料夾、逐檔上傳原始檔並讀回。記錄實際返回ID，不可把ZIP上傳當成資料夾展開成功。
+Drive無法寫入時，用tools/cloud_workspace.py匯出私人ZIP、handoff.md與drive-plan.json給我下載，明說尚未存入Drive。若執行環境也無法產檔，給可複製接續內容，不宣稱安裝成功。回報工作區初始化、下載交付、Drive保存三項各自的真實狀態；可行的品牌規劃繼續，不把取得儲存權限當成開案必須等待的關卡。
+接著開始KMW00：初次把需要的問題一次全部列完，已知資料先帶入；已有開案進度則接續，不重問已答問題。我不知道的項目，先用有來源的產業常見做法或標明的工作假設繼續，成本列參考依據、幣別與區間，不當成我的實際成本。收到回答後一次產出品牌摘要、成交分類、成交路徑、成本情境與優先行動。結束時同步MD、開案JSON、Project與Index，再依實際能力存檔並回報。
