@@ -114,7 +114,7 @@ class ReadableTests(unittest.TestCase):
         for name in ['INSTALL_PROMPT.txt','MOBILE_INSTALL_PROMPT.txt']:
             text=(ROOT/name).read_text(encoding='utf-8')
             self.assertIn('禁止自行增加KMW00-XXX',text);self.assertIn('一次全部列完',text)
-            self.assertIn('JSON不是手機',text)
+            if name=='MOBILE_INSTALL_PROMPT.txt': self.assertIn('JSON不是手機',text)
         self.assertNotIn('逐檔保存原始MD／JSON',(ROOT/'template/AGENTS.md').read_text(encoding='utf-8'))
 
 if __name__=='__main__': unittest.main()

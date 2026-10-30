@@ -1,6 +1,6 @@
 我要在手機／平板的ChatGPT專案使用KMW00。請從 https://github.com/DinoHappyKM/KMW00-brand-marketing 讀README.md、MOBILE.md、READABLE_STATE_TEMPLATE.md及TESTING.md。
 使用我指定的私人Google Drive資料夾；若只有名稱先查候選，位置不明或多個候選才集中詢問。不要因Linux就停止，也不要把手機當成必定能執行程式。能直接用Google Docs建立品牌文件就走可讀模式，不以完整套件下載、JSON或Python作為開始條件；有可寫工作區才按INSTALL.md初始化。
-使用固定版本v0.1.0-beta.3，記錄VERSION與實際commit；若標記尚未發布，明說候選版，不把main當固定版。
+使用固定版本v0.1.0-beta.4，記錄VERSION與實際commit；若標記尚未發布，明說候選版，不把main當固定版。
 我的指定私人資料夾本身就是品牌根目錄，直接建立00_系統、10_品牌、20_行銷等分類。禁止自行增加KMW00-XXX、template、workspace外層。既有分類沿用、已有企劃接續，不重置；同名衝突集中核對，不用再包一層繞過。
 日常先讀AGENTS規則、四核心文件、導引式開案、跨裝置接續及本次相關品牌文件。JSON不是手機規劃或可讀保存的必要條件；若不可讀，依既有可讀文件繼續，不空白重開。缺跨裝置接續時依READABLE_STATE_TEMPLATE.md建立，有Python可用tools/readable_workspace.py prepare，保留舊資料。
 手機可用Google Docs正文；成本表可用Sheets並在索引記真實連結。先確認當次建立／更新／讀回工具，逐檔讀回正文，不能只看檔名或上傳成功。跨端指定雲端文件作主來源，本機副本開始前讀最新、寫回前比較起始版本；衝突先合併，不自動覆蓋。

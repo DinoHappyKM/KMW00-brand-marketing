@@ -1,11 +1,11 @@
-我要在Windows或Mac的Codex使用KMW00。請從 https://github.com/DinoHappyKM/KMW00-brand-marketing 讀README.md、INSTALL.md、MOBILE.md及TESTING.md。
-先辨識環境及實際檔案工具，下載完整套件、閱讀適用腳本並核對payload.sha256，在我指定的私人資料夾使用Windows或Mac安裝器；沒有檔案工具就明說未安裝。舊企劃照INSTALL.md更新，不整包覆蓋。手機／平板請改用第二段MOBILE_INSTALL_PROMPT.txt。
-使用固定版本v0.1.0-beta.3，記錄VERSION與實際commit；若標記尚未發布，明說候選版，不把main當固定版。
-我的指定私人資料夾本身就是品牌根目錄，直接建立00_系統、10_品牌、20_行銷等分類。禁止自行增加KMW00-XXX、template、workspace外層。既有分類沿用、已有企劃接續，不重置；同名衝突集中核對，不用再包一層繞過。
-日常先讀AGENTS規則、四核心文件、導引式開案、跨裝置接續及本次相關品牌文件。JSON不是手機規劃或可讀保存的必要條件；若不可讀，依既有可讀文件繼續，不空白重開。缺跨裝置接續時依READABLE_STATE_TEMPLATE.md建立，有Python可用tools/readable_workspace.py prepare，保留舊資料。
-手機可用Google Docs正文；成本表可用Sheets並在索引記真實連結。先確認當次建立／更新／讀回工具，逐檔讀回正文，不能只看檔名或上傳成功。跨端指定雲端文件作主來源，本機副本開始前讀最新、寫回前比較起始版本；衝突先合併，不自動覆蓋。
-無Drive寫入能力仍完成規劃，交付可複製文字或可讀TXT／ZIP，明說尚未存入Drive。可執行工具時使用readable_workspace.py export，產生handoff.txt及drive-plan.md；它不需要JSON，也不會自行寫Drive。
-首次問題一次全部列完，已知資料先帶入；續作不重問。不知道的項目採有來源的產業參考或明列工作假設，成本附幣別、區間與來源，不當實際成本。收到回答一次完成品牌摘要、成交分類、成交路徑、成本情境與優先行動。
-暫停時更新可讀品牌文件、接續紀錄、Project與Index，提高修訂並記錄來源。JSON若未核對就標可能較舊。分別回報工作區、下載交付、Drive保存狀態，私人資料不回傳公開GitHub。
+我要在Windows或Mac的Codex使用KMW00。請從 https://github.com/DinoHappyKM/KMW00-brand-marketing 讀README.md、INSTALL.md、DESKTOP_TROUBLESHOOTING.md及TESTING.md，使用固定版本v0.1.0-beta.4並記錄實際commit。
+這次先完成電腦本機安裝與接續，只有我要求跨裝置保存時才讀MOBILE.md及檢查Drive；未設定雲端不阻止電腦使用。
+辨識Windows或Mac及目前已授權的品牌資料夾。我的指定資料夾本身就是根目錄，00系統、10品牌、20行銷等分類直接在其下；禁止自行增加KMW00-XXX、template、workspace外層。位置不明才集中詢問；已有企劃先讀取，不重置或整包覆蓋。
+先做一個最小本機讀取。若發生helper_unknown_error或setup refresh had errors，這是安裝器執行前的程序初始化失敗；依DESKTOP_TROUBLESHOOTING.md有界診斷，再透過當次平台允許的方式取得僅限指定路徑及安裝器的核准。未取得核准就不執行；不修改全域設定、Windows ACL或停用安全限制。不要第一次失敗就斷言完全沒有檔案工具，也不要無限重試。
+下載完整固定版套件、閱讀適用腳本並核對payload.sha256。Windows用Install-Windows.ps1，Mac用Install-Mac.sh；本機工具仍不可用時提供公開ZIP與Windows的Start-Windows.cmd／Mac終端機安裝步驟，明說尚未安裝，不能用網頁閱讀冒充檔案已建立。
+安裝成功後讀回AGENTS、四個核心文件、導引式開案及實際位置。已有跨裝置接續就讀取，缺少時依READABLE_STATE_TEMPLATE.md建立；Python為選用工具，不是安裝前置條件。JSON鏡像若較舊以已確認可讀文件為準。
+輸入開始KMW00：初次需要的問題一次全部列完，已知資料先帶入；續作不重問。不了解的成本等採有來源的產業參考或透明工作假設，附日期、地區、幣別與區間，不當實際成本。收到回答一次產出品牌摘要、成交分類、成交路徑、成本情境與優先行動。
+暫停時更新本機可讀品牌文件、跨裝置接續、Project與Index，記錄修訂、目前進度與下一步。跨端保存是選用需求，依MOBILE.md明確讀取及比對後保存；私人資料不回傳公開GitHub。
+分別回報本機工具啟動、安裝／既有企劃接續、可讀檔案驗證；只有要求雲端時才加Drive保存狀態。未實際執行成功就如實標待完成。
 
 

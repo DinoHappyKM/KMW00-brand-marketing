@@ -1,3 +1,12 @@
+# beta.4測試範圍
+
+2026-10-30新增8項（6項原生Windows、2項入口規則），連同既有46項共54項。Windows跳過2項Mac/Linux連結測試；Mac/Linux跳過6項原生Windows測試。實際結果看[本版CI](https://github.com/DinoHappyKM/KMW00-brand-marketing/actions)。
+
+以本機一般程序測Windows入口，不能代替Codex受限命令助手恢復；環境setup refresh錯誤另記實測證據。原生入口仍受使用者與組織的政策限制。
+
+本輪Windows本機54項：52成功、2平台連結測試跳過；另實際以cmd.exe啟動Start-Windows.cmd並透過輸入指定目的地，退出碼0且核心文件存在。受限Codex命令啟動錯誤可重現；替代授權程序及使用者一般本機程序可執行，不等於底層故障已消失。
+
+## 歷史beta.3
 # 測試與驗收範圍
 版本：0.1.0-beta.3
 

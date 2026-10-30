@@ -66,7 +66,7 @@
   "confirmed_decisions": [],
   "pending_items": [],
   "do_not_assume": [],
-  "package_version": "0.1.0-beta.3",
+  "package_version": "0.1.0-beta.4",
   "intake_mode": "batch",
   "assumptions": []
 }
