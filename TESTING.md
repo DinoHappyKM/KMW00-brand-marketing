@@ -1,6 +1,6 @@
 # beta.4測試範圍
 
-2026-10-30新增8項（6項原生Windows、2項入口規則），連同既有46項共54項。Windows跳過2項Mac/Linux連結測試；Mac/Linux跳過6項原生Windows測試。實際結果看[本版CI](https://github.com/DinoHappyKM/KMW00-brand-marketing/actions)。
+2026-10-30新增9項（6項原生Windows、3項入口及版本規則），連同既有46項共55項。Windows跳過2項Mac/Linux連結測試；Mac/Linux跳過6項原生Windows測試。實際結果看[本版CI](https://github.com/DinoHappyKM/KMW00-brand-marketing/actions)。
 
 以本機一般程序測Windows入口，不能代替Codex受限命令助手恢復；環境setup refresh錯誤另記實測證據。原生入口仍受使用者與組織的政策限制。
 
@@ -29,3 +29,5 @@
 需要在學員帳號驗證：直接根目錄、Google Docs正文建立／讀回、手機新對話接續、電腦取回新版、遠端衝突處理、權限不足降級。確認只有檔名／截斷或無寫入時能如實回報。
 不可把GitHub Actions成功說成ChatGPT外掛上架、手機雲端存檔或背景自動同步。
 
+
+發行首輪測試三平台成功，但VERSION帶CR造成gh資產路徑錯誤；版本檔改LF並在發行讀取時去除CR/LF，加入跨平台版本回歸。最終以新版CI結果為準。

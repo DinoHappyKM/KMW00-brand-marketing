@@ -37,6 +37,11 @@ class NativeWindowsTests(unittest.TestCase):
         self.assertTrue((dest/'AGENTS.md').exists())
 
 class DesktopFlowTests(unittest.TestCase):
+    def test_release_version_is_platform_neutral(self):
+        value=(ROOT/'VERSION').read_bytes()
+        self.assertNotIn(b'\r',value)
+        self.assertEqual(value.strip(),b'0.1.0-beta.4')
+
     def test_desktop_cloud_is_optional_and_error_recovery_bounded(self):
         prompt=(ROOT/'INSTALL_PROMPT.txt').read_text(encoding='utf-8')
         self.assertIn('只有我要求跨裝置保存時',prompt)
